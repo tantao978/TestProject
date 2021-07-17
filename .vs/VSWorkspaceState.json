@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VideoSite",
+    "\\VideoSite\\aspnet-core",
+    "\\VideoSite\\aspnet-core\\src",
+    "\\VideoSite\\aspnet-core\\src\\VideoSite.DbMigrator",
+    "\\VideoSite\\aspnet-core\\src\\VideoSite.Web"
   ],
+  "SelectedNode": "\\VideoSite\\aspnet-core\\src\\VideoSite.DbMigrator\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
