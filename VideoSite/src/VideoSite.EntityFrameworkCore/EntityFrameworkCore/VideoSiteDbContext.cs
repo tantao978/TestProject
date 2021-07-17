@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VideoSite.Users;
+using VideoSite.Videos;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
@@ -21,6 +22,8 @@ namespace VideoSite.EntityFrameworkCore
     public class VideoSiteDbContext : AbpDbContext<VideoSiteDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+
+        public DbSet<Video> Videos { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside VideoSiteDbContextModelCreatingExtensions.ConfigureVideoSite

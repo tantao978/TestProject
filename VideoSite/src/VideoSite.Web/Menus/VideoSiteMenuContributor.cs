@@ -31,6 +31,12 @@ namespace VideoSite.Web.Menus
                     "~/",
                     icon: "fas fa-home",
                     order: 0
+                ).AddItem(
+                    new ApplicationMenuItem(
+                         VideoSiteMenus.Video,
+                        l["Menu:Videos"],
+                        url: "/Videos"
+                    )
                 )
             );
             

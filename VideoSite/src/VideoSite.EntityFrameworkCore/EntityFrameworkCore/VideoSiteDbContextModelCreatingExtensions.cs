@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using VideoSite.Videos;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace VideoSite.EntityFrameworkCore
 {
@@ -17,6 +19,13 @@ namespace VideoSite.EntityFrameworkCore
             //    b.ConfigureByConvention(); //auto configure for the base class props
             //    //...
             //});
+
+            builder.Entity<Video>(b =>
+            {
+                b.ToTable(VideoSiteConsts.DbTablePrefix + "Videos", VideoSiteConsts.DbSchema);
+                b.ConfigureByConvention(); 
+                b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+            });
         }
     }
 }
