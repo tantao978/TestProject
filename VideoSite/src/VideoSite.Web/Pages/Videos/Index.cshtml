@@ -1,6 +1,19 @@
 ﻿@page
-@model VideoSite.Web.Pages.Videos.IndexModel
-@{
+@using VideoSite.Localization
+@using VideoSite.Web.Pages.Videos
+@using Microsoft.Extensions.Localization
+@model IndexModel
+@inject IStringLocalizer<VideoSiteResource> L
+@section scripts
+{
+    <abp-script src="/Pages/Videos/Index.js" />
 }
 
-<h2>Videos</h2>
+<abp-card>
+    <abp-card-header>
+        <h2>@L["Videos"]</h2>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="VideosTable"></abp-table>
+    </abp-card-body>
+</abp-card>
