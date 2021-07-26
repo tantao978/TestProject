@@ -42,4 +42,15 @@
             ]
         })
     );
+
+    var createModal = new abp.ModalManager(abp.appPath + 'Videos/CreateModal');
+
+    createModal.onResult(function () {
+        dataTable.ajax.reload();
+    });
+
+    $('#NewVideoButton').click(function (e) {
+        e.preventDefault();
+        createModal.open();
+    });
 });

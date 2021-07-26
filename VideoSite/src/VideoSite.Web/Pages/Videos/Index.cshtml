@@ -11,7 +11,17 @@
 
 <abp-card>
     <abp-card-header>
-        <h2>@L["Videos"]</h2>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Videos"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewVideoButton"
+                            text="@L["NewVideo"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
     </abp-card-header>
     <abp-card-body>
         <abp-table striped-rows="true" id="VideosTable"></abp-table>
