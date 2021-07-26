@@ -7,3 +7,7 @@
 /ConsoleApp/ConsoleApp/.vs/ConsoleApp/DesignTimeBuild
 /ConsoleApp/ConsoleApp/ConsoleApp/obj
 .vs
+/VuejsApp/VuejsApp/bin
+/VuejsApp/VuejsApp/Properties/PublishProfiles
+/VuejsApp/VuejsApp/obj
+/VuejsApp/VuejsApp/node_modules
